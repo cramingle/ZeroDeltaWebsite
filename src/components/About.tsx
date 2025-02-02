@@ -94,7 +94,7 @@ const About = () => {
                       <Mail className="w-5 h-5" />
                     </a>
                     <a 
-                      href="https://github.com/rizkisyafii" 
+                      href="https://github.com/rizkisyaf" 
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-success hover:text-success/90 transition-colors"
@@ -103,16 +103,7 @@ const About = () => {
                       <Github className="w-5 h-5" />
                     </a>
                     <a 
-                      href="https://linkedin.com/in/rizkisyafii" 
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-success hover:text-success/90 transition-colors"
-                      title="LinkedIn"
-                    >
-                      <Linkedin className="w-5 h-5" />
-                    </a>
-                    <a 
-                      href="https://twitter.com/rizkisyafii" 
+                      href="https://twitter.com/kisra_fistya" 
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-success hover:text-success/90 transition-colors"
