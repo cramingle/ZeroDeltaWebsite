@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="col-span-1 sm:col-span-2">
             <div className="flex items-center space-x-3 mb-4 sm:mb-6">
               <img src={logo} alt="Ziro Delta Logo" className="h-6 sm:h-8 w-auto" />
-              <span className="text-base sm:text-lg font-medium text-white">ZeroDelta</span>
+              <span className="text-base sm:text-lg font-medium text-white">ZiroDelta</span>
             </div>
             <p className="text-sm sm:text-base text-gray-400 mb-3 sm:mb-4 max-w-xl">
               Advanced basis trading intelligence and systematic market making across digital asset markets.
@@ -65,7 +65,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-6 sm:pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <p className="text-xs sm:text-sm text-gray-500 text-center sm:text-left">
-              © {new Date().getFullYear()} ZeroDelta. All rights reserved.
+              © {new Date().getFullYear()} ZiroDelta. All rights reserved.
             </p>
             <div className="flex space-x-4 sm:space-x-6">
               <a href="#" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">

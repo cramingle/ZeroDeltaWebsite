@@ -175,14 +175,14 @@ const OpenPosition = () => {
           </ol>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
             <a 
-              href="mailto:careers@zerodelta.com" 
+              href="mailto:support@zerodelta.com" 
               className="flex items-center px-6 py-3 bg-success text-dark font-medium rounded-lg hover:bg-success/90 transition-colors w-full sm:w-auto justify-center"
             >
               <Mail className="w-5 h-5 mr-2" />
               Apply via Email
             </a>
             <a 
-              href="https://github.com/zerodelta" 
+              href="https://github.com/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="flex items-center px-6 py-3 bg-gray-800 text-white font-medium rounded-lg hover:bg-gray-700 transition-colors w-full sm:w-auto justify-center"
