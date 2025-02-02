@@ -59,7 +59,7 @@ const LogoWithText: React.FC<LogoWithTextProps> = ({ className = '' }) => {
             fill="#FFFFFF"
             letterSpacing="0.05em"
           >
-            <tspan>ZERO DELTA</tspan>
+            <tspan>Ziro Delta</tspan>
           </text>
         </g>
       </g>

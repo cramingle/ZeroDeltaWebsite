@@ -8,7 +8,7 @@ const About = () => {
       <section className="pt-32 pb-16 sm:pt-40 sm:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-            About Zero Delta
+            About Ziro Delta
           </h1>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Revolutionizing digital asset trading through cutting-edge technology and 
@@ -24,7 +24,7 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold text-white mb-6">Our Mission</h2>
               <p className="text-gray-400 text-lg leading-relaxed mb-6">
-                At Zero Delta, we're committed to revolutionizing the digital asset trading 
+                At Ziro Delta, we're committed to revolutionizing the digital asset trading 
                 landscape through innovative technology and sophisticated algorithms. Our focus 
                 is on developing cutting-edge solutions that optimize trading strategies and 
                 maximize market opportunities.
@@ -80,7 +80,7 @@ const About = () => {
                   <p className="text-success font-medium mb-4">Founder & CEO</p>
                   <p className="text-gray-400 text-lg mb-6">
                     With extensive experience in algorithmic trading and market making, 
-                    Rizki leads Zero Delta's vision to revolutionize digital asset trading. 
+                    Rizki leads Ziro Delta's vision to revolutionize digital asset trading. 
                     His expertise in developing sophisticated trading algorithms and deep 
                     understanding of market microstructure drives our technological innovation 
                     and strategic direction.

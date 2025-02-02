@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 sm:col-span-2">
             <div className="flex items-center space-x-3 mb-4 sm:mb-6">
-              <img src={logo} alt="Zero Delta Logo" className="h-6 sm:h-8 w-auto" />
+              <img src={logo} alt="Ziro Delta Logo" className="h-6 sm:h-8 w-auto" />
               <span className="text-base sm:text-lg font-medium text-white">ZeroDelta</span>
             </div>
             <p className="text-sm sm:text-base text-gray-400 mb-3 sm:mb-4 max-w-xl">

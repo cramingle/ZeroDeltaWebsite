@@ -57,7 +57,7 @@ const OpenPosition = () => {
             Hey there! 👋
           </p>
           <p className="text-gray-400 mb-8">
-            I'm building Zero Delta Terminal, a specialized market analysis tool for basis markets, and I'm looking for a junior developer to join me on this journey. This is a bootstrapped project with promising potential - we're in talks with investors and have potential funding opportunities on the horizon.
+            I'm building Ziro Delta Terminal, a specialized market analysis tool for basis markets, and I'm looking for a junior developer to join me on this journey. This is a bootstrapped project with promising potential - we're in talks with investors and have potential funding opportunities on the horizon.
           </p>
         </div>
 
@@ -65,7 +65,7 @@ const OpenPosition = () => {
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-white mb-4">About the Project</h2>
           <p className="text-gray-400">
-            Zero Delta Terminal is a dedicated market analysis terminal I've built that monitors basis market conditions across exchanges. It's already functional, processing real-time data and helping identify market opportunities, but there's so much more we can do with it.
+            Ziro Delta Terminal is a dedicated market analysis terminal I've built that monitors basis market conditions across exchanges. It's already functional, processing real-time data and helping identify market opportunities, but there's so much more we can do with it.
           </p>
         </div>
 

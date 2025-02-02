@@ -32,7 +32,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto lg:mx-0">
-            Zero Delta Research specializes in systematic trading strategies 
+            Ziro Delta Research specializes in systematic trading strategies 
             and advanced market making across digital asset markets, with a 
             focus on basis trading and funding rate optimization.
           </p>

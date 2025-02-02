@@ -9,7 +9,7 @@ const Careers = () => {
       title: 'Junior Python Developer',
       location: 'Kediri Kota',
       type: 'Full-time',
-      description: 'Join us in building Zero Delta Terminal, a specialized market analysis tool for basis markets. Looking for a junior developer with Python experience and eagerness to learn about financial markets.'
+      description: 'Join us in building Ziro Delta Terminal, a specialized market analysis tool for basis markets. Looking for a junior developer with Python experience and eagerness to learn about financial markets.'
     }
   ];
 
