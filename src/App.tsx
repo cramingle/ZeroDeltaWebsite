@@ -27,14 +27,12 @@ function App() {
               <Route path="/" element={
                 <>
                   <Hero />
-                  <Technology />
                   <Research />
                   <Careers />
                 </>
               } />
               <Route path="/earn-yield" element={<ComingSoon />} />
               <Route path="/basis-trading" element={<Technology />} />
-              <Route path="/technology" element={<Technology />} />
               <Route path="/research" element={<Research />} />
               <Route path="/research/:id" element={<ResearchDetail />} />
               <Route path="/careers" element={<Careers />} />

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import logo from '../assets/logo.png';
+import LogoWithText from './LogoWithText';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +21,7 @@ const Navbar = () => {
   };
 
   const navigation = [
-    { name: 'Technology', href: '/technology' },
+    { name: 'Basis Trading', href: '/basis-trading' },
     { name: 'Research', href: '/research' },
     { name: 'Careers', href: '/careers' },
     { name: 'About', href: '/about' },
@@ -31,8 +31,7 @@ const Navbar = () => {
     <nav className="fixed w-full bg-dark/95 backdrop-blur-sm z-50 px-6 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-3" onClick={closeMenu}>
-          <img src={logo} alt="Zero Delta Logo" className="h-8 w-auto" />
-          <span className="text-lg font-medium text-white tracking-wide">ZeroDelta</span>
+          <LogoWithText className="h-8 w-auto" />
         </Link>
         
         {/* Mobile menu button */}
@@ -42,36 +41,15 @@ const Navbar = () => {
 
         {/* Desktop menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <Link 
-            to="/basis-trading" 
-            className={`text-sm hover:text-white transition-colors ${isActive('/basis-trading')}`}
-          >
-            BASIS TRADING
-          </Link>
-          <Link 
-            to="/technology" 
-            className={`text-sm hover:text-white transition-colors ${isActive('/technology')}`}
-          >
-            TECHNOLOGY
-          </Link>
-          <Link 
-            to="/research" 
-            className={`text-sm hover:text-white transition-colors ${isActive('/research')}`}
-          >
-            RESEARCH
-          </Link>
-          <Link 
-            to="/careers" 
-            className={`text-sm hover:text-white transition-colors ${isActive('/careers')}`}
-          >
-            CAREERS
-          </Link>
-          <Link 
-            to="/about" 
-            className={`text-sm hover:text-white transition-colors ${isActive('/about')}`}
-          >
-            ABOUT
-          </Link>
+          {navigation.map((item) => (
+            <Link 
+              key={item.href}
+              to={item.href} 
+              className={`text-sm hover:text-white transition-colors ${isActive(item.href)}`}
+            >
+              {item.name.toUpperCase()}
+            </Link>
+          ))}
         </div>
 
         <div className="hidden md:flex items-center space-x-4">
@@ -88,44 +66,16 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-dark/95 backdrop-blur-sm py-4 px-6">
           <div className="flex flex-col space-y-4">
-            <Link 
-              to="/basis-trading" 
-              className={`text-sm hover:text-white transition-colors ${isActive('/basis-trading')}`}
-              onClick={closeMenu}
-            >
-              BASIS TRADING
-            </Link>
-            <Link 
-              to="/technology" 
-              className={`text-sm hover:text-white transition-colors ${isActive('/technology')}`}
-              onClick={closeMenu}
-            >
-              TECHNOLOGY
-            </Link>
-            <Link 
-              to="/research" 
-              className={`text-sm hover:text-white transition-colors ${isActive('/research')}`}
-              onClick={closeMenu}
-            >
-              RESEARCH
-            </Link>
-            <Link 
-              to="/careers" 
-              className={`text-sm hover:text-white transition-colors ${isActive('/careers')}`}
-              onClick={closeMenu}
-            >
-              CAREERS
-            </Link>
-            <Link 
-              to="/about" 
-              className={`text-sm hover:text-white transition-colors ${isActive('/about')}`}
-              onClick={closeMenu}
-            >
-              ABOUT
-            </Link>
-            <button className="text-sm text-gray-300 hover:text-white transition-colors text-left">
-              REGISTER
-            </button>
+            {navigation.map((item) => (
+              <Link 
+                key={item.href}
+                to={item.href} 
+                className={`text-sm hover:text-white transition-colors ${isActive(item.href)}`}
+                onClick={closeMenu}
+              >
+                {item.name.toUpperCase()}
+              </Link>
+            ))}
             <button 
               onClick={() => {
                 navigate('/earn-yield');

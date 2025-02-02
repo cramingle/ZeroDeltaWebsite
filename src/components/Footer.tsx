@@ -31,13 +31,13 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/technology" className="text-sm text-gray-400 hover:text-white transition-colors">
-                  Technology
+                <Link to="/research" className="text-sm text-gray-400 hover:text-white transition-colors">
+                  Research
                 </Link>
               </li>
               <li>
-                <Link to="/research" className="text-sm text-gray-400 hover:text-white transition-colors">
-                  Research
+                <Link to="/earn-yield" className="text-sm text-gray-400 hover:text-white transition-colors">
+                  Earn Yield
                 </Link>
               </li>
             </ul>
@@ -53,13 +53,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-sm text-gray-400 hover:text-white transition-colors">
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link to="/earn-yield" className="text-sm text-gray-400 hover:text-white transition-colors">
-                  Earn Yield
+                <Link to="/about" className="text-sm text-gray-400 hover:text-white transition-colors">
+                  About
                 </Link>
               </li>
             </ul>
