@@ -6,17 +6,17 @@ const researchItems = {
   'basis-trading-strategies': {
     title: 'Basis Trading Strategies',
     category: 'Trading Strategy',
-    expectedDate: 'Q2 2024'
+    expectedDate: 'Q2 2025'
   },
   'market-making-optimization': {
     title: 'Market Making Optimization',
     category: 'Market Making',
-    expectedDate: 'Q2 2024'
+    expectedDate: 'Q2 2025'
   },
   'funding-rate-analysis': {
     title: 'Funding Rate Analysis',
     category: 'Market Analysis',
-    expectedDate: 'Q3 2024'
+    expectedDate: 'Q3 2025'
   }
 };
 
