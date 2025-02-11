@@ -14,7 +14,7 @@ const Footer = () => {
               <span className="text-base sm:text-lg font-medium text-white">ZiroDelta</span>
             </div>
             <p className="text-sm sm:text-base text-gray-400 mb-3 sm:mb-4 max-w-xl">
-              Advanced basis trading intelligence and systematic market making across digital asset markets.
+              The first specialized yield marketplace for basis trading opportunities. Connecting sophisticated market making strategies with capital providers.
             </p>
             <p className="text-xs sm:text-sm text-gray-500">
               Registered Company: PT. Ninuang Global Business
@@ -26,8 +26,8 @@ const Footer = () => {
             <h3 className="text-sm sm:text-base text-white font-medium mb-2 sm:mb-4">Quick Links</h3>
             <ul className="space-y-2 sm:space-y-3">
               <li>
-                <Link to="/basis-trading" className="text-sm text-gray-400 hover:text-white transition-colors">
-                  Basis Trading
+                <Link to="/marketplace" className="text-sm text-gray-400 hover:text-white transition-colors">
+                  Marketplace
                 </Link>
               </li>
               <li>
@@ -36,8 +36,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/earn-yield" className="text-sm text-gray-400 hover:text-white transition-colors">
-                  Earn Yield
+                <Link to="/technology" className="text-sm text-gray-400 hover:text-white transition-colors">
+                  Technology
                 </Link>
               </li>
             </ul>

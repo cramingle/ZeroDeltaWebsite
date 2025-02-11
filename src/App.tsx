@@ -33,6 +33,7 @@ function App() {
                 </>
               } />
               <Route path="/earn-yield" element={<ComingSoon />} />
+              <Route path="/marketplace" element={<ComingSoon />} />
               <Route path="/basis-trading" element={<Technology />} />
               <Route path="/research" element={<Research />} />
               <Route path="/research/:id" element={<ResearchDetail />} />
