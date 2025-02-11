@@ -184,7 +184,7 @@ const ComingSoon = () => {
     <div className="min-h-screen bg-dark flex flex-col relative overflow-hidden py-20 sm:py-32">
       {/* Background Matrix */}
       <div className="absolute inset-0 flex items-center justify-center opacity-10">
-        <div className="grid grid-cols-16 gap-1 sm:gap-2 transform scale-100 sm:scale-125 lg:scale-150">
+        <div className="grid grid-cols-16 gap-1 sm:gap-2 transform scale-75 sm:scale-100 lg:scale-150">
           {MASCOT_MATRIX.flat().map((cell, i) => (
             <div
               key={i}
@@ -197,25 +197,25 @@ const ComingSoon = () => {
       </div>
 
       {/* Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         {/* Header */}
         <div className="mb-8">
-          <div className="flex justify-between items-center mb-6">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mb-6">
             <div>
-              <h1 className="text-3xl font-bold text-white mb-2">Markets</h1>
-              <p className="text-gray-400">
+              <h1 className="text-2xl sm:text-3xl font-bold text-white mb-2">Markets</h1>
+              <p className="text-sm sm:text-base text-gray-400">
                 Exit anytime at market price. All yield is streamed until maturity.
               </p>
             </div>
             <div className="inline-flex items-center bg-dark-800/80 backdrop-blur-sm px-4 py-2 rounded-lg border border-success/30">
-              <Clock className="w-5 h-5 text-success mr-2" />
-              <span className="text-success">Preview of Q2 2025 Launch</span>
+              <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-success mr-2" />
+              <span className="text-sm sm:text-base text-success">Preview of Q2 2025 Launch</span>
             </div>
           </div>
 
           {/* Filters & Search */}
-          <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
-            <div className="flex items-center space-x-4">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div className="flex flex-wrap gap-2 sm:gap-4">
               {[
                 { id: 'popular', label: 'All Markets' },
                 { id: 'new', label: 'New Markets' },
@@ -225,7 +225,7 @@ const ComingSoon = () => {
               ].map((filter) => (
                 <button
                   key={filter.id}
-                  className={`px-4 py-2 rounded-lg transition-colors ${
+                  className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg text-sm transition-colors ${
                     activeFilter === filter.id
                       ? 'bg-success/10 text-success border border-success/30'
                       : 'text-gray-400 hover:text-white'
@@ -236,44 +236,44 @@ const ComingSoon = () => {
                 </button>
               ))}
             </div>
-            <div className="relative">
+            <div className="relative w-full sm:w-auto">
               <Search className="w-5 h-5 text-gray-400 absolute left-3 top-1/2 transform -translate-y-1/2" />
               <input
                 type="text"
                 placeholder="Search markets"
-                className="bg-dark-800/80 backdrop-blur-sm text-white pl-10 pr-4 py-2 rounded-lg border border-white/5 focus:border-success/30 outline-none w-[300px]"
+                className="w-full sm:w-[300px] bg-dark-800/80 backdrop-blur-sm text-white pl-10 pr-4 py-2 rounded-lg border border-white/5 focus:border-success/30 outline-none"
               />
             </div>
           </div>
 
           {/* Market Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-6">
             {[
               { label: "24h Volume", value: "$2.45M" },
               { label: "Total TVL", value: "$1.89B" },
               { label: "Active Markets", value: "8" },
               { label: "ZD Price", value: "$0.85" }
             ].map((stat, index) => (
-              <div key={index} className="bg-dark-800/80 backdrop-blur-sm rounded-lg p-4 text-center border border-white/5">
-                <div className="text-success font-bold">{stat.value}</div>
-                <div className="text-gray-400 text-sm">{stat.label}</div>
+              <div key={index} className="bg-dark-800/80 backdrop-blur-sm rounded-lg p-3 sm:p-4 text-center border border-white/5">
+                <div className="text-success font-bold text-sm sm:text-base">{stat.value}</div>
+                <div className="text-gray-400 text-xs sm:text-sm">{stat.label}</div>
               </div>
             ))}
           </div>
         </div>
 
         {/* Calculator Widget */}
-        <div className="fixed bottom-8 right-8 z-50">
+        <div className="fixed bottom-8 right-4 sm:right-8 z-50">
           <button
             onClick={() => setShowCalculator(!showCalculator)}
             className="bg-success text-dark p-3 rounded-full shadow-lg hover:bg-success/90 transition-colors"
           >
-            <CalcIcon className="w-6 h-6" />
+            <CalcIcon className="w-5 h-5 sm:w-6 sm:h-6" />
           </button>
         </div>
 
         {showCalculator && (
-          <div className="fixed bottom-24 right-8 w-80 bg-dark-800/95 backdrop-blur-sm rounded-xl border border-success/30 shadow-xl z-50">
+          <div className="fixed bottom-20 sm:bottom-24 right-4 sm:right-8 w-[calc(100%-2rem)] sm:w-80 bg-dark-800/95 backdrop-blur-sm rounded-xl border border-success/30 shadow-xl z-50">
             <div className="p-4 border-b border-white/5">
               <div className="flex justify-between items-center">
                 <h3 className="text-white font-medium">Yield Calculator</h3>
@@ -324,13 +324,13 @@ const ComingSoon = () => {
           </div>
         )}
 
-        <div className="flex gap-8">
-          {/* Market Table - Adjust width */}
-          <div className={`bg-dark-800/80 backdrop-blur-sm rounded-xl border border-white/5 overflow-hidden ${
-            selectedOpportunity ? 'w-2/3' : 'w-full'
+        <div className="flex flex-col lg:flex-row gap-4 sm:gap-8">
+          {/* Market Table */}
+          <div className={`bg-dark-800/80 backdrop-blur-sm rounded-xl border border-white/5 overflow-x-auto ${
+            selectedOpportunity ? 'w-full lg:w-2/3' : 'w-full'
           }`}>
             {/* Table Header */}
-            <div className="grid grid-cols-7 gap-4 p-4 border-b border-white/5 text-sm font-medium">
+            <div className="min-w-[800px] grid grid-cols-7 gap-4 p-4 border-b border-white/5 text-xs sm:text-sm font-medium">
               <div className="col-span-2">Market</div>
               <div className="text-right">Total TVL</div>
               <div className="text-right">Settlement Time</div>
@@ -340,47 +340,49 @@ const ComingSoon = () => {
             </div>
 
             {/* Table Body */}
-            {getFilteredOpportunities().map((opp) => (
-              <div
-                key={opp.id}
-                className={`grid grid-cols-7 gap-4 p-4 border-b border-white/5 hover:bg-dark-700/50 cursor-pointer ${
-                  selectedOpportunity?.id === opp.id ? 'bg-dark-700/50' : ''
-                }`}
-                onClick={() => setSelectedOpportunity(opp)}
-              >
-                <div className="col-span-2">
-                  <div className="flex items-center">
-                    <Star className="w-4 h-4 text-gray-500 mr-2" />
-                    <div>
-                      <div className="font-medium text-white">{opp.pair}</div>
-                      <div className="text-sm text-gray-400">{opp.exchanges.join(" → ")}</div>
+            <div className="min-w-[800px]">
+              {getFilteredOpportunities().map((opp) => (
+                <div
+                  key={opp.id}
+                  className={`grid grid-cols-7 gap-4 p-4 border-b border-white/5 hover:bg-dark-700/50 cursor-pointer text-sm ${
+                    selectedOpportunity?.id === opp.id ? 'bg-dark-700/50' : ''
+                  }`}
+                  onClick={() => setSelectedOpportunity(opp)}
+                >
+                  <div className="col-span-2">
+                    <div className="flex items-center">
+                      <Star className="w-4 h-4 text-gray-500 mr-2" />
+                      <div>
+                        <div className="font-medium text-white">{opp.pair}</div>
+                        <div className="text-xs text-gray-400">{opp.exchanges.join(" → ")}</div>
+                      </div>
                     </div>
                   </div>
+                  <div className="text-right text-white">{opp.tvl}</div>
+                  <div className="text-right">
+                    <span className={`px-2 py-1 rounded-full text-xs ${
+                      opp.settlementTime === '8h' ? 'bg-purple-500/20 text-purple-300' :
+                      opp.settlementTime === '24h' ? 'bg-blue-500/20 text-blue-300' :
+                      opp.settlementTime === '3m' ? 'bg-green-500/20 text-green-300' :
+                      'bg-orange-500/20 text-orange-300'
+                    }`}>
+                      {opp.settlementTime}
+                    </span>
+                  </div>
+                  <div className="text-right text-success font-medium">{opp.expectedYield}</div>
+                  <div className="text-right text-white">{opp.minBid}</div>
+                  <div className="text-right">
+                    <span className="text-gray-400">{opp.strategy}</span>
+                  </div>
                 </div>
-                <div className="text-right text-white">{opp.tvl}</div>
-                <div className="text-right">
-                  <span className={`px-2 py-1 rounded-full text-xs ${
-                    opp.settlementTime === '8h' ? 'bg-purple-500/20 text-purple-300' :
-                    opp.settlementTime === '24h' ? 'bg-blue-500/20 text-blue-300' :
-                    opp.settlementTime === '3m' ? 'bg-green-500/20 text-green-300' :
-                    'bg-orange-500/20 text-orange-300'
-                  }`}>
-                    {opp.settlementTime}
-                  </span>
-                </div>
-                <div className="text-right text-success font-medium">{opp.expectedYield}</div>
-                <div className="text-right text-white">{opp.minBid}</div>
-                <div className="text-right">
-                  <span className="text-gray-400">{opp.strategy}</span>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           {/* Bidding Side Panel */}
           {selectedOpportunity && (
-            <div className="w-1/3">
-              <div className="sticky top-24 bg-dark-800/80 backdrop-blur-sm rounded-xl p-6 border border-white/5">
+            <div className="w-full lg:w-1/3">
+              <div className="sticky top-24 bg-dark-800/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/5">
                 <div className="flex justify-between items-start mb-6">
                   <div>
                     <h3 className="text-xl font-bold text-white">{selectedOpportunity.pair}</h3>
